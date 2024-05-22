@@ -65,7 +65,7 @@ param stripeWebhookSecret string
 
 // Set to true to use Azure API Management
 @description('Flag to use Azure API Management to mediate the calls between the Web frontend and the backend API')
-param useAPIM bool = false
+param useAPIM bool = true
 
 var abbrs = loadJsonContent('./abbreviations.json')
 var resourceToken = toLower(uniqueString(subscription().id, environmentName, location))
