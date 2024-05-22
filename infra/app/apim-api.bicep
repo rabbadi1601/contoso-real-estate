@@ -33,7 +33,7 @@ resource restApi 'Microsoft.ApiManagement/service/apis@2021-12-01-preview' = {
     displayName: apiDisplayName
     path: apiPath
     protocols: [ 'https' ]
-    subscriptionRequired: false
+    subscriptionRequired: true
     type: 'http'
     format: 'openapi'
     serviceUrl: apiBackendUrl
@@ -98,8 +98,8 @@ resource apimProduct 'Microsoft.ApiManagement/service/products@2022-08-01' = {
     description: 'Contoso public APIs'
     displayName: 'Contoso public APIs'
     state: 'published'
-    subscriptionRequired: false
-    approvalRequired: false
+    subscriptionRequired: true
+    approvalRequired: true
     subscriptionsLimit: 1
   }
 }
