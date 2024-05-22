@@ -33,7 +33,7 @@ resource restApi 'Microsoft.ApiManagement/service/apis@2021-12-01-preview' = {
     displayName: apiDisplayName
     path: apiPath
     protocols: [ 'https' ]
-    subscriptionRequired: false
+    subscriptionRequired: true
     type: 'http'
     format: 'openapi'
     serviceUrl: apiBackendUrl
